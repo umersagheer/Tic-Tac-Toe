@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Block {
+  height: 150px;
+  width: 150px;
+  border: 1px solid #000;
+  background-size: cover;
+  display: inline-block;
+}
+.Board {
+  height: fit-content;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+.mark1 {
+  background-image: url(/Images/icons8-circle-100.png);
+}
+.mark2 {
+  background-image: url(/Images/icons8-cross-90.png);
+}
+.GameName {
+  margin: 20px 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: monospace;
+}
+.Alert {
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border: 1px solid #000;
+  position: fixed;
+  top: 20px;
+}
