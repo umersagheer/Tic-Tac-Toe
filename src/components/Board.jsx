@@ -21,11 +21,9 @@ const Board = () => {
     for (let c of comination) {
       if (mark[c[0]] === 1 && mark[c[1]] === 1 && mark[c[2]] === 1) {
         setWinner(2);
-        console.log("1 wins");
       }
       if (mark[c[0]] === 2 && mark[c[1]] === 2 && mark[c[2]] === 2) {
         setWinner(1);
-        console.log("2 wins");
       }
     }
   }, [mark]);
@@ -42,7 +40,7 @@ const Board = () => {
 
   return (
     <div className="Board">
-      {winner ? <div>player {winner} wins</div> : null}
+      {winner ? <div>winner is Player: {winner}</div> : null}
       <div>
         <Block mark={mark[0]} changeMark={changeMark} position={0}></Block>
         <Block mark={mark[1]} changeMark={changeMark} position={1}></Block>
